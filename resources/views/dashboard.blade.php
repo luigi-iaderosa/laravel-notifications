@@ -102,12 +102,14 @@
         <thead style="font-weight: bold; background-color: #0C9A9A">
             <td>Id</td>
             <td>Data</td>
+            <td>Delete Action</td>
         </thead>
         <tbody>
         @foreach($unread as $notification)
             <tr>
                 <td>{{$notification->id}}</td>
                 <td>{{json_encode($notification->data)}}</td>
+                <td><button>Delete</button></td>
             </tr>
         @endforeach
         </tbody>
